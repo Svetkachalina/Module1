@@ -8,16 +8,15 @@
 // 151, 911, 1987 - так же простые числа
 // Используйте цикл for в функции
 
-const isPrime = (n) => {
-    for (let i = 2; i < n; i++) {
-        for (let j = 2; j < i; j++) {
-            if (i % j === 0) {
-                console.log('true');
-            } else {
-                console.log('false');
-            }
+const isPrime = (number) => {
+    for (let i = 2; i < number; i++) {
+        if (!(number % i)) {
+            return false;
         }
     }
+    return true;
+    
 };
 
-isPrime();
+isPrime(151);
+console.log(isPrime(20));
