@@ -18,5 +18,5 @@ const isPrime = (number) => {
     
 };
 
-isPrime(151);
-console.log(isPrime(20));
+
+console.log(isPrime(7));
